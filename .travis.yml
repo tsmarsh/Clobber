@@ -2,4 +2,4 @@ language: java
 jdk:
   - oraclejdk8
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+  - mvn -DrepoToken=o98ZnRk9ZVk21HAq5VJuMY3az376WrMlr clean test jacoco:report coveralls:report
