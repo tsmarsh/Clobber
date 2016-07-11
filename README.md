@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tsmarsh/Clobber.svg?branch=master)](https://travis-ci.org/tsmarsh/Clobber) [![Coverage Status](https://coveralls.io/repos/github/tsmarsh/Clobber/badge.svg?branch=master)](https://coveralls.io/github/tsmarsh/Clobber?branch=master)
+
 # Clobber #
 
 A common feature of online games is the 'inventory' which provides a
