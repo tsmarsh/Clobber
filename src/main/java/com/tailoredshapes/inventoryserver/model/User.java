@@ -1,8 +1,5 @@
 package com.tailoredshapes.inventoryserver.model;
 
-import com.impetus.kundera.index.Index;
-import com.impetus.kundera.index.IndexCollection;
-
 import javax.persistence.*;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -13,7 +10,6 @@ import java.util.HashSet;
 @Entity
 @Cacheable
 @Table(name = "users")
-@IndexCollection(columns = {@Index(name = "name")})
 public class User implements Idable<User>, Keyed, Cloneable, ShallowCopy<User> {
 
     @Id

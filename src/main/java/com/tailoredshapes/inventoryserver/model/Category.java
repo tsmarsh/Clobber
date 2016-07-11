@@ -1,14 +1,10 @@
 package com.tailoredshapes.inventoryserver.model;
 
-import com.impetus.kundera.index.Index;
-import com.impetus.kundera.index.IndexCollection;
-
 import javax.persistence.*;
 
 @Entity
 @Cacheable
 @Table(name = "categories")
-@IndexCollection(columns = {@Index(name = "name"), @Index(name = "fullname")})
 public class Category implements Idable<Category>, Cloneable, ShallowCopy<Category> {
     @Id
     @Column(name = "category_id")
