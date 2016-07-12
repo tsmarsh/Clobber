@@ -19,11 +19,11 @@ public class LongHashEncoder<T> implements Encoder<T, LongHash> {
 
         char[] value = serialiser.serialise(object).toCharArray();
 
-        long h = 0l;
+        long h = 0L;
 
         if (value.length > 0) {
             for (char aValue : value) {
-                h = 524287l * h + aValue;
+                h = 524287L * h + aValue;
             }
         }
         return h;
