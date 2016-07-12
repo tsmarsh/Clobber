@@ -161,7 +161,6 @@ public class PestletTest {
 
         JSONObject readUser = new JSONObject(userResponseString);
         assertThat(readUser.getString("name")).isEqualTo("Archer");
-        assertThat(readUser.getString("publicKey")).isNotNull();
     }
 
     private void listSavedUser(CloseableHttpClient httpClient, int port) throws IOException {//READ USER
@@ -175,7 +174,6 @@ public class PestletTest {
         assertThat(users.length()).isEqualTo(1);
         JSONObject archer = users.getJSONObject(0);
         assertThat(archer.getString("name")).isEqualTo("Archer");
-        assertThat(archer.getString("publicKey")).isNotNull();
     }
 
     private String createInventoryForUser(CloseableHttpClient httpClient, String userUrl) throws URISyntaxException, IOException {

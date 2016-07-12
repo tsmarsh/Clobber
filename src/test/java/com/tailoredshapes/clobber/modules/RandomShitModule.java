@@ -15,7 +15,7 @@ import com.tailoredshapes.clobber.model.User;
 import com.tailoredshapes.clobber.parsers.Parser;
 import com.tailoredshapes.clobber.parsers.UserParser;
 import com.tailoredshapes.clobber.repositories.InventoryCategoryPredicate;
-import com.tailoredshapes.clobber.security.RSA;
+import com.tailoredshapes.clobber.security.SHA;
 import com.tailoredshapes.clobber.validators.InventoryValidator;
 import com.tailoredshapes.clobber.validators.UserValidator;
 import com.tailoredshapes.clobber.validators.Validator;
@@ -39,7 +39,7 @@ public class RandomShitModule implements Module {
                 .to(InventoryIdExtractor.class);
 
         binder.bind(new TypeLiteral<Saver<User>>() {})
-                .to(new TypeLiteral<UserSaver<RSA>>() {});
+                .to(new TypeLiteral<UserSaver>() {});
 
         binder.bind(new TypeLiteral<Saver<Inventory>>() {})
                 .to(InventorySaver.class);

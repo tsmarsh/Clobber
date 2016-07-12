@@ -24,8 +24,6 @@ public class UserTest {
         User bobby = new UserBuilder().name("Bobby").build();
 
         assertEquals(
-                "User{id=555, name='Bobby', privateKey="+ bobby.getPrivateKey() +
-                        ", publicKey="+ bobby.getPublicKey() +
-                        ", inventories=[]}", bobby.toString());
+                "User{id=555, name='Bobby', inventories=[]}", bobby.toString());
     }
 }
