@@ -25,6 +25,6 @@ public class SHAEncoder<T> implements Encoder<T, SHA> {
             e.printStackTrace();
         }
 
-        return 0l;
+        return 0L;
     }
 }
