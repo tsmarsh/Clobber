@@ -16,7 +16,7 @@
     </filter-mapping>
 
     <listener>
-        <listener-class>com.tailoredshapes.inventoryserver.CassandraServletConfig</listener-class>
+        <listener-class>com.tailoredshapes.clobber.CassandraServletConfig</listener-class>
     </listener>
 
 </web-app>

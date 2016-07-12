@@ -10,11 +10,11 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- JPA entities must be registered here -->
-        <class>com.tailoredshapes.inventoryserver.model.User</class>
-        <class>com.tailoredshapes.inventoryserver.model.Category</class>
-        <class>com.tailoredshapes.inventoryserver.model.MetricType</class>
-        <class>com.tailoredshapes.inventoryserver.model.Metric</class>
-        <class>com.tailoredshapes.inventoryserver.model.Inventory</class>
+        <class>com.tailoredshapes.clobber.model.User</class>
+        <class>com.tailoredshapes.clobber.model.Category</class>
+        <class>com.tailoredshapes.clobber.model.MetricType</class>
+        <class>com.tailoredshapes.clobber.model.Metric</class>
+        <class>com.tailoredshapes.clobber.model.Inventory</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>

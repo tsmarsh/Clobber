@@ -76,7 +76,7 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>com.tailoredshapes.inventoryserver.InventoryServer</mainClass>
+          <mainClass>com.tailoredshapes.clobber.InventoryServer</mainClass>
         </configuration>
       </plugin>
       <plugin>

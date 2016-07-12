@@ -16,7 +16,7 @@
     </filter-mapping>
 
     <listener>
-        <listener-class>com.tailoredshapes.inventoryserver.MemoryServletConfig</listener-class>
+        <listener-class>com.tailoredshapes.clobber.MemoryServletConfig</listener-class>
     </listener>
 
 </web-app>
