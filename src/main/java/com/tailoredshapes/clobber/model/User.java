@@ -116,6 +116,7 @@ public class User implements Idable<User>, Keyed, Cloneable, ShallowCopy<User> {
     @Override
     public User shallowCopy() {
         return new User().setId(null)
+                .setName(name)
                 .setPrivateKey(privateKey)
                 .setPublicKey(publicKey)
                 .setInventories(inventories);
