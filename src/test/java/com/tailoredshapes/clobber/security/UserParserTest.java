@@ -119,8 +119,6 @@ public class UserParserTest {
 
         assertEquals("Archer", parsedUser.getName());
         assertTrue(parsedUser.getInventories().iterator().next().getId().equals(inventory.getId()));
-        assertArrayEquals(savedUser.getPrivateKey().getEncoded(), parsedUser.getPrivateKey().getEncoded());
-        assertArrayEquals(savedUser.getPublicKey().getEncoded(), parsedUser.getPublicKey().getEncoded());
     }
 
 
@@ -196,7 +194,5 @@ public class UserParserTest {
 
         assertEquals("Archer", parsedUser.getName());
         assertThat(parsedUser.getInventories(), hasItems(newInventory, inventory));
-        assertArrayEquals(clone.getPrivateKey().getEncoded(), parsedUser.getPrivateKey().getEncoded());
-        assertArrayEquals(clone.getPublicKey().getEncoded(), parsedUser.getPublicKey().getEncoded());
     }
 }

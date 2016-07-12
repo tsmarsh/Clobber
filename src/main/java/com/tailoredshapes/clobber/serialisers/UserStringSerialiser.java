@@ -25,7 +25,6 @@ public class UserStringSerialiser implements Serialiser<User, String> {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("id", urlBuilder.build(user));
         jsonObject.put("name", user.getName());
-        jsonObject.put("publicKey", Base64.getEncoder().encodeToString(user.getPublicKey().getEncoded()));
 
         JSONArray inventories = new JSONArray();
         for (Inventory inventory : user.getInventories()) {

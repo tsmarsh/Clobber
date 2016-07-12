@@ -63,8 +63,6 @@ public class UserDAOTest extends GuiceTest {
         User savedUser = dao.create(user);
 
         assertNotNull(savedUser.getId());
-        assertNotNull(savedUser.getPublicKey());
-        assertNotNull(savedUser.getPrivateKey());
 
         User readUser = dao.read(new User().setId(savedUser.getId()));
         assertEquals(savedUser, readUser);

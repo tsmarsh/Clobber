@@ -56,6 +56,6 @@ public class UserBuilder {
     }
 
     public User build() {
-        return user.setId(id).setName(name).setPrivateKey(privateKey).setPublicKey(publicKey).setInventories(inventoryMap);
+        return user.setId(id).setName(name).setInventories(inventoryMap);
     }
 }

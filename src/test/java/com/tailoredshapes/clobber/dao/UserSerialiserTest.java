@@ -49,8 +49,6 @@ public class UserSerialiserTest {
 
         assertEquals(user.getName(), jsonObject.getString("name"));
 
-        assertArrayEquals(user.getPublicKey().getEncoded(), Base64.decodeBase64(jsonObject.getString("publicKey")));
-        assertFalse(jsonObject.has("privateKey"));
         assertTrue(jsonObject.has("inventories"));
         assertEquals(1, jsonObject.getJSONArray("inventories").length());
     }
